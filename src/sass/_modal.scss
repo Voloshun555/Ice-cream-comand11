@@ -65,12 +65,6 @@
  z-index: 999;
  transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
 
- @media screen and (max-width:1199px) {
-   
-    overflow-y: scroll;
-   
- }
- 
 
 }
 
@@ -379,7 +373,7 @@ display: block;
 
    @media screen  and (max-width:1199px) {
       overflow-y: scroll;
-      height: 60vh;;
+      
    }
 }
 

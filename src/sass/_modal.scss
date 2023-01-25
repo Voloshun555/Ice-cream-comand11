@@ -51,7 +51,7 @@
 
 .modal-products {
    position: absolute;
-   top: 60%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;
@@ -61,11 +61,11 @@
    padding: 28px;
    opacity: 0;
  visibility: hidden;
- z-index: 30;
+ z-index: 999;
 
  @media screen and (max-width:1199px) {
    height: 90vh;
-    overflow: scroll;
+    overflow-y: scroll;
    
  }
  
@@ -361,7 +361,7 @@ display: block;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;
-   height: 90vh;
+   
    background: var(--text-color);
    border: 2px solid var(--Default-color);
    border-radius: 10px;
@@ -374,7 +374,8 @@ display: block;
 
 
    @media screen  and (max-width:1199px) {
-      overflow: scroll;
+      overflow-y: scroll;
+      height: 78vh;
    }
 }
 
@@ -534,7 +535,9 @@ display: block;
    color: #131313; 
 
 }
-
+.modal-about-form-input:not(:placeholder-shown):required:invalid {
+   border-color: #ff0000;
+}
 .modal-about-form-field-comment {
    margin-bottom: 24px;
    
@@ -684,7 +687,7 @@ display: block;
 
 .modal-franchise {
    position: fixed;
-   top: 60%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;
@@ -752,6 +755,10 @@ display: block;
    line-height: 1.4;
    color: var(--text-color-dark); 
 
+}
+
+.modal-franchise-form-input:not(:placeholder-shown):required:invalid {
+   border-color: #ff0000;
 }
 
 .modal-franchise-form-field-comment {

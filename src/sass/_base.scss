@@ -1,0 +1,117 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    cursor: url('../images/cursor.svg'), auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  :root {
+    --cards-cream:#AEC6A5;
+    --cards-coffe:#EFD478;
+    --text-color-data--Disabled: #ABABAB;
+    --text-list-product: #D6936D;
+    --text-color-btn: #000000;
+    --text-color-grey: #ababab;
+    --text-color:#FCFCFC;
+    --text-color-dark: #131313;
+    --Default-color:#F8D24E;
+    --hover-color: #0a8817;
+    --cubic-brauser: cubic-bezier(0.4, 0, 0.2, 1);
+    --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-image: url('../images/Backgroud_mobile.jpg');
+
+  background-position: center;
+
+
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/Backgroud_mobile@2x.jpg');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/Background_tablet.jpg');
+    }
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+background-image: url('../images/Background_tablet@2x.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+   
+      background-image: url("../images/Backgroud_desktop.jpg");
+    
+  }
+
+  @media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi), screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+   
+      background-image: url("../images/Backgroud_desktop@2x.jpg");
+    }
+
+}
+
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+.link {
+    text-decoration: none;
+}
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }

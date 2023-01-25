@@ -120,6 +120,7 @@ background-color: var( --hover-color);
   bottom: 0;
   right: 0;
   pointer-events: none;
+  
 }
 
 .hero-image {
@@ -127,6 +128,11 @@ background-color: var( --hover-color);
   bottom: 0;
   right: 0;
   margin-right: 60px;
+
+  @media screen and (min-width:480px) and (max-width:767px) {
+    width: 218px;
+    margin-right: 40px;
+  }
 }
 
 .container-hero {

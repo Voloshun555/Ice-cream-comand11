@@ -14,7 +14,7 @@ ul,ol {
 .some-contacs-cards {
     width: 280px;
     height: 100%;
-    padding: 40px 32px 24px 32px;
+    padding: 44px 24px 24px;
     margin: 0 auto;
     margin-bottom: 16px;
     text-decoration: none;
@@ -23,6 +23,11 @@ ul,ol {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     list-style-type: none;
+
+
+    @media screen and (min-width:1200px) {
+        padding: 40px 40px 40px;
+    }
 }
 .some-contacs-cards-last {
     margin-bottom: 0;
@@ -54,6 +59,7 @@ ul,ol {
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: #131313;
+    margin-bottom: 8px;
 }
 
 .contacs-table:hover{
@@ -154,10 +160,7 @@ text-decoration: underline;
 .container-button {
     text-align: center;
 }
-.container-button-link {
-    margin-top: 24px;
-    margin-bottom: 16px;
-}
+
 .contacs-button-left:hover {
     background: #0A8817;
 }
@@ -182,7 +185,22 @@ text-decoration: underline;
 .contacs-button-icons {
     margin-right: 4px;
 }
+
 //---Phone---//
+
+.container-button-contact{
+    margin-top: 24px;
+   
+   
+}
+
+@media screen  and (max-width:767px) {
+    .container-button-link:first-child
+    {
+        margin-bottom: 16px;
+    }
+    
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container-contacs {
         width: 100%;
@@ -202,7 +220,7 @@ text-decoration: underline;
         margin: 0 auto;
         justify-content: center;
     }
-    .global-section-contacs li {
+    .global-section-contacs > li {
         margin-right: 16px;
     }
     .global-section-contacs li:last-child {
@@ -228,16 +246,13 @@ text-decoration: underline;
     }
     .container-button-link {
         margin-right: 16px;
-        margin-top: 40px;
+       
     }
     .contacs-tables {
         width: 150px;
+        margin-bottom: 12px;
     }
-    // .container-button {
-    //     display: flex;
-    //     text-align: center;
-    //     flex-wrap: wrap;
-    // }
+   
 }
 
 
@@ -288,11 +303,10 @@ text-decoration: underline;
         align-items: baseline;
         text-align: center;
         justify-content: center;
+
+        margin-top: 60px;
+        gap: 16px;
     }
     
-    .container-button-link {
-        margin-right: 16px;
-        margin-top: 60px;
-    }
 }
 

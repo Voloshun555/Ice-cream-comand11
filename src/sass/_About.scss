@@ -3,6 +3,7 @@
 }
 .section-about{
   background-color: #84a178;
+  padding-top: 60px;
 }
 .about-title-label {
   font-weight: 700;
@@ -12,7 +13,6 @@
   text-transform: uppercase;
   color: var(--text-color);
   margin-bottom: 12px;
-  padding-top: 60px;
 }
 
 .about-title {
@@ -50,7 +50,7 @@
 
 .about-picture {
   position: absolute;
-  top: 262px;
+  top: 205px;
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
@@ -156,7 +156,7 @@
   }
 
   .about-picture {
-    top: 240px;
+    top: 180px;
     left: 32px;
     transform: translateX(0%);
     width: 330px;
@@ -211,7 +211,7 @@
   }
 
   .about-picture {
-    top: 275px;
+    top: 210px;
     left: 16px;
     width: 490px;
     height: 490px;

@@ -13,7 +13,7 @@
    height: 100%;
    background-color: rgba(0, 0, 0, .5);
    z-index: 20;
-   transition: .3s all;
+   transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
  }
 
 .modal.active,
@@ -39,6 +39,7 @@
    padding: 0;
    cursor: pointer;
    background-color: transparent;
+   
 
 }
 
@@ -62,6 +63,7 @@
    opacity: 0;
  visibility: hidden;
  z-index: 999;
+ transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
 
  @media screen and (max-width:1199px) {
    
@@ -366,6 +368,8 @@ display: block;
    border: 2px solid var(--Default-color);
    border-radius: 10px;
    padding: 28px 20px;
+
+   transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
    
 
    opacity: 0;
@@ -700,6 +704,8 @@ display: block;
    visibility: hidden;
    z-index: 30;
 
+   transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
+
    
 }
 .modal-franchise-header {
@@ -883,10 +889,11 @@ display: block;
    transform: translate(-50%, -50%);
    z-index: 30; /* Должен быть выше чем у подложки*/
  
-   transition: 0.3s all;
  
    opacity: 0;
    visibility: hidden;
+
+   transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
  }
  
  @media screen and (min-width: 748px) {
@@ -971,6 +978,8 @@ display: block;
  
    opacity: 0;
    visibility: hidden;
+
+   transition: opacity 250ms var(--cubic-brauser), visibility 250ms var(--cubic-brauser);
  }
  
  @media screen and (min-width:748px) {
